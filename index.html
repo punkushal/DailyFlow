@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>DailyFlow</title>
+    <meta
+      name="description"
+      content="A minimalist personal daily productivity dashboard."
+    />
+    <meta name="theme-color" content="#2e9e5b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="DailyFlow" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="assets/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div>
+          <h1>DailyFlow</h1>
+          <div id="date"></div>
+        </div>
+        <nav id="nav"></nav>
+      </header>
+      <main id="main"></main>
+    </div>
+    <div id="modal" hidden></div>
+    <div id="toast"></div>
+    <noscript>DailyFlow needs JavaScript to run.</noscript>
+    <script src="js/date-utils.js"></script>
+    <script src="js/database.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/goals.js"></script>
+    <script src="js/affirmations.js"></script>
+    <script src="js/tasks.js"></script>
+    <script src="js/task-completions.js"></script>
+    <script src="js/statistics.js"></script>
+    <script src="js/backup.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
